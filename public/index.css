@@ -3,7 +3,33 @@ body{
 }
 
 header{
-  min-height: 80px;
+  min-height: 70px;
   background: black;
   color: whitesmoke;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
+
+header nav a{
+  padding: 0 12px;
+  color: whitesmoke;
+  
+}
+
+header .fa{
+  font-size: 1.4em;
+}
+
+main{
+  margin-top: 80px;
+}
+
+/* @media screen and (max-width: 600px) {
+ 
+  header{
+    display: none;
+  }
+
+} */
+
