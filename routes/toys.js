@@ -30,7 +30,7 @@ router.get("/", async(req,res) => {
   }  
 })
 
-
+///////////////////////////////////////////////////////////////////////
 router.get("/cat/:cat", async(req,res) => {
   try{
 
@@ -51,7 +51,7 @@ router.get("/cat/:cat", async(req,res) => {
   }  
 })
 
-
+//////////////////////////////////////////////////////////////////////
 router.get("/prices", async(req,res) => {
   try{
 
@@ -60,10 +60,8 @@ router.get("/prices", async(req,res) => {
     let max = Number(req.query.max);
     let perPage = 10;
     let page = (req.query.page)? Number(req.query.page):0;
-    let catSearch = req.params.cat;
-    let regSerchCat = RegExp(catSearch , "i") 
-
-    let toysData = await ToyModel.find({category:regSerchCat})
+    
+    let toysData = await ToyModel.find({})
     .limit(perPage)
     .skip(perPage*page)
 

@@ -38,7 +38,7 @@
 
 
 
-  <main class="container-fluid">
+  <main class="container-fluid ">
     <h2 class="text-center mt-4 text-decoration-underline" id="get_user">Documentation - Users collection</h2>
 
 
@@ -48,10 +48,11 @@
     <div class="box mt-5 ">
     
       <h3 class="text-center" >Get Users</h3>
-      <div class="row justify-content-between p-5">
+      <!-- שיניתי לפ MD -->
+      <div class="row justify-content-between p-md-5 p-2">
 
         <div class="alert alert-secondary col-lg-6  mt-2" data-box="get_r" role="alert" id="left">
-          <table class="table table-success text-center" id="page">
+          <table class="table table-success text-center table-sm"  id="page">
             <thead>
               <th>*</th>
               <th>Request</th>
@@ -110,10 +111,10 @@
 
 
 
-     <div class="row justify-content-between p-5">
+     <div class="row justify-content-between p-md-5 p-2">
 
       <div class="alert alert-secondary col-lg-6 mt-5" data-box="add_r" role="alert" id="left">
-        <table class="table table-success text-center">
+        <table class="table table-success text-center table-sm">
           <thead>
             <th>*</th>
             <th>Request</th>
@@ -151,10 +152,10 @@
     <!-- post login-->
     <hr>
     <h3 class="text-center" id="user_login">Users Login</h3>
-    <div class="row justify-content-between p-5">
+    <div class="row justify-content-between p-md-5 p-2">
 
-      <div class="alert alert-secondary col-lg-6  mt-5 small" role="alert" id="left" data-box="login">
-        <table class="table table-success text-center">
+      <div class="alert alert-secondary col-lg-6  mt-5 " role="alert" id="left" data-box="login">
+        <table class="table table-success text-center table-sm small">
           <thead>
             <th>*</th>
             <th>Request</th>
@@ -187,15 +188,17 @@
       </div>
     </div>
   </div>
+
   <!-- toys -->
 <hr class="bg-primary">
   <h2 class="text-center mt-4 text-decoration-underline">Documentation - Toys collection</h2>
 <!-- get 10 toys -->
 <h3 class="text-center mt-5" id="get_toys">Get Toys</h3>
-<div class="row justify-content-between p-5">
+
+<div class="row justify-content-between p-md-5 p-2">
 
   <div class="alert alert-secondary col-lg-6  mt-2" role="alert" id="left" data-box="get_toy">
-    <table class="table table-success text-center">
+    <table class="table table-success text-center table-sm">
       <thead>
         <th>*</th>
         <th>Request</th>
@@ -249,10 +252,48 @@
         </tr>
         <tr>
           <th>Description:</th>
-          <td colspan="2" class="text-start">Search letter combination at name/category.</td>
+          <td colspan="2" class="text-start">Search letter combination at name/info.</td>
         </tr>
       </tbody>
     </table>
+
+    <!-- search cat -->
+
+
+    <table class="table table-success mt-5 text-center" id="filter">
+      <thead>
+        <th>*</th>
+        <th>Request</th>
+        <th>Type</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th>--></th>
+          <td><a href="#">/toys/cat/ {Toys Category}</a></td>
+          <td class="text-success fw-bolder">GET</td>
+        </tr>
+        <tr>
+          <th>Description:</th>
+          <td colspan="2" class="text-start">Search a toy, by his category.</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <!-- filter toy -->
 
@@ -274,6 +315,11 @@
           </tr>
         </tbody>
       </table>
+      
+
+
+
+
   </div>
 
 <!-- right side -->
@@ -296,10 +342,10 @@
 <hr>
 <h3 class="text-center mt-5" id="add_toys">Add Toys</h3>
 
-<div class="row justify-content-between p-5">
+<div class="row justify-content-between p-md-5">
 
   <div class="alert alert-secondary col-lg-6 mt-5" role="alert" id="left" data-box="add_toy">
-    <table class="table table-success text-center">
+    <table class="table table-success text-center table-sm">
       <thead>
         <th>*</th>
         <th>Request</th>
@@ -344,10 +390,10 @@
 <hr>
 <h3 class="text-center mt-5" id="put_toys">Put Toys</h3>
 
-<div class="row justify-content-between p-5">
+<div class="row justify-content-between p-md-5 p-2">
 
   <div class="alert alert-secondary col-lg-6 mt-5 small" role="alert" id="left" data-box="put_toy">
-    <table class="table table-success text-center">
+    <table class="table table-success text-center table-sm">
       <thead>
         <th>*</th>
         <th>Request</th>
@@ -396,7 +442,7 @@
 
 
 <div class="alert alert-secondary mt-5" role="alert">
-  <table class="table table-success text-center">
+  <table class="table table-success text-center table-sm small">
     <thead>
       <th>*</th>
       <th>Request</th>

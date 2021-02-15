@@ -25,11 +25,11 @@ main{
   margin-top: 80px;
 }
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
  
-  header{
-    display: none;
-  }
+  .alert{
+    padding: 0rem 0rem;
+}
 
-} */
+}
 
