@@ -19,18 +19,12 @@ function viewEvent() {
     item.addEventListener('mouseleave', function() {
 
       let box = this.dataset.box
-      // alert(box)
+      
       document.querySelector(`#${box}`).style.transform = "scale(1.0)"; 
 
   
     })
   })
-
-
-
-
-
-
 
 
   // document.querySelector('#left').addEventListener("mouseover" , (e) =>{

@@ -131,41 +131,4 @@ router.delete("/:delId", authToken ,async(req,res) => {
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// router.get("/", async(req,res) => {
-//   try{
-
-//     let perPage = 10;
-//     let page = (req.query.page)? Number(req.query.page):0;
-//     let searchQ = req.query.s;
-
-//     let toysData = await ToyModel.find({$or:[{name:searchQ},{info:searchQ}]})
-//     .limit(perPage)
-//     .skip(perPage*page)
-
-//     res.json(toysData)
-
-//   }
-//   catch(err){
-//     console.log(err);
-//     res.status(400).json({err:err});
-//   }  
-
-// })
-
-
-
 module.exports = router;

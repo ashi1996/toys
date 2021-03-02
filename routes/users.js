@@ -23,18 +23,6 @@ router.get('/', async(req, res) => {
   }
 });
 
-// router.get("/myInfo",authToken ,async(req,res) => {
-//   try{
-//     // req.userData -> נוצר בקובץ מידלווארי אוט
-//     let user = await UserModel.findOne({_id:req.userData._id},{pass:0});
-//     res.json(user);
-//   }
-//   catch (err) {
-//     console.log(err);
-//     res.status(400).json(err);
-//   }
-// })
-
 
 router.post("/login",async(req,res) => {
   let validBody = validLogin(req.body);

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const {config} = require('../config/secretData');
-// panda3 -> מיצג את השם של המסד נתונים
+
 mongoose.connect(`mongodb+srv://${config.mongoUser}:${config.mongoPass}@cluster0.rxaod.mongodb.net/myData`, {useNewUrlParser: true, useUnifiedTopology: true});
 
 
