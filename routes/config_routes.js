@@ -1,7 +1,7 @@
 const indexR = require("./index");
 const usersR = require("./users");
 const toysR = require("./toys");
-const studentsR = require("./students");
+
 
 
 exports.corsAccessControl = (app) => {
@@ -18,7 +18,7 @@ exports.routesInit = (app) => {
   app.use("/", indexR);
   app.use("/users", usersR);
   app.use("/toys", toysR);
-  app.use("/students", studentsR);
+  
 
   app.use((req,res) => {
     res.status(404).json({msg:"404 url page not found"})
